@@ -6,7 +6,7 @@
   check_mode: true
   register: package_state
 
-- name: fail if previous check has changed
-  assert:
-    that:
-      - package_state.changed != True
+# - name: fail if previous check has changed
+#   assert:
+#     that:
+#       - package_state.changed != True
